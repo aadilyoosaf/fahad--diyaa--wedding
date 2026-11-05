@@ -126,7 +126,7 @@ document.getElementById('save-calendar-btn').addEventListener('click', () => {
     'SUMMARY:Fahad & Diya — Wedding Ceremony',
     'DTSTART:20261212T133000Z',
     'DTEND:20261212T160000Z',
-    'LOCATION:White Castle Auditorium\\, Kannachery\\, Kozhikode',
+    'LOCATION:White Castle Auditorium\\, Kannanchery\\, Kozhikode',
     'DESCRIPTION:Your presence and heartfelt prayers will be a great honor and blessing to us! — Farshad\\, Hina\\, Aizal & Family',
     'END:VEVENT',
     'END:VCALENDAR'
