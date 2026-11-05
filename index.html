@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Fahad &amp; Diya — Wedding Invitation | 12 Dec 2026</title>
+  <meta name="description" content="In the Name of Allah, the Most Merciful. Join us for the wedding ceremony of Fahad & Diya on Saturday, 12th December 2026 at White Castle Auditorium, Kannachery." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Lobster+Two:ital,wght@1,700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="locked">
+  <!-- Hidden YouTube Audio Player (Maher Zain - Bika Moulhimi Muffled: BbzBAX_pHho) -->
+  <div id="yt-audio-container" aria-hidden="true">
+    <div id="yt-player"></div>
+  </div>
+
+  <!-- Falling Rose Petals Canvas -->
+  <canvas id="petal-canvas" aria-hidden="true"></canvas>
+
+  <!-- Wax Seal Envelope Splash Screen -->
+  <div id="envelope-overlay" class="envelope-overlay">
+    <div class="envelope-card" id="envelope-card">
+      <div class="envelope-flap"></div>
+      <div class="envelope-body">
+        <img src="bismillah.png" alt="Bismillah" class="envelope-bismillah-logo" />
+        <p class="envelope-bismillah-text">IN THE NAME OF ALLAH<br />THE MOST MERCIFUL</p>
+        <h1 class="envelope-names">Fahad <span>&amp;</span> Diya</h1>
+        <p class="envelope-date">12 . 12 . 2026</p>
+
+        <button id="open-seal-btn" class="wax-seal" aria-label="Open Wedding Invitation">
+          <span class="seal-ring">
+            <span class="seal-monogram">F<span>&amp;</span>D</span>
+          </span>
+        </button>
+
+        <p class="tap-hint">Tap Wax Seal to Open Invitation</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Audio Control Button -->
+  <button id="music-toggle" class="music-toggle hidden" aria-label="Toggle Background Music">
+    <span class="eq-bars" id="eq-bars">
+      <span></span><span></span><span></span><span></span>
+    </span>
+    <span class="music-label" id="music-label">Playing</span>
+  </button>
+
+  <!-- Main Invitation Scroll -->
+  <div class="page-wrapper">
+    <main class="invitation-scroll">
+      <div class="scroll-inner-border">
+
+        <!-- 1. SEPARATE INVITATION AREA -->
+        <section class="hero-invitation">
+          <!-- Calligraphic Bismillah Lockup & English Translation -->
+          <div class="bismillah-header">
+            <img src="bismillah.png" alt="Bismillahir Rahmanir Raheem" class="bismillah-logo" />
+            <p class="bismillah-eng">
+              IN THE NAME OF ALLAH<br />
+              <span>THE MOST MERCIFUL</span>
+            </p>
+          </div>
+
+          <!-- Quranic Pairing Verse -->
+          <div class="quran-verse-block">
+            <p class="arabic-verse" dir="rtl" lang="ar">فِي الدُّنْيَا وَالْآخِرَةِ</p>
+            <p class="verse-translation">AND WE CREATED YOU IN PAIRS</p>
+            <p class="verse-ref">QURAN 78:8</p>
+          </div>
+
+          <!-- Ornamental Leaf Divider -->
+          <div class="ornament-divider">
+            <span class="line"></span>
+            <span class="symbol">❦</span>
+            <span class="line"></span>
+          </div>
+
+          <!-- Groom & Bride Names -->
+          <div class="couple-block">
+            <h2 class="couple-name">Fahad</h2>
+            <p class="parentage">(S/o. Mr. Siddique &amp; Mrs. Haseena Nalakath)</p>
+
+            <div class="ampersand">&amp;</div>
+
+            <h2 class="couple-name">Diya</h2>
+            <p class="parentage">
+              (D/o. Mr. Eranhikkal Mohammed Koya (UVV) &amp; Mrs.<br />
+              Jameela Parambath)
+            </p>
+          </div>
+
+          <!-- Ceremony Date & Time -->
+          <p class="ceremony-label">THE WEDDING CEREMONY OF</p>
+
+          <div class="date-row">
+            <div class="date-col">Saturday</div>
+            <div class="date-sep"></div>
+            <div class="date-col date-num">12<sup>th</sup></div>
+            <div class="date-sep"></div>
+            <div class="date-col">December 2026</div>
+          </div>
+
+          <!-- Ornamental Heart Divider -->
+          <div class="ornament-divider">
+            <span class="line"></span>
+            <span class="symbol">♡</span>
+            <span class="line"></span>
+          </div>
+
+          <div class="event-meta">
+            <p class="meta-item">
+              <span class="meta-icon" aria-hidden="true">🕒</span>
+              <span>7.00 pm to 9.30 pm</span>
+            </p>
+            <p class="meta-item">
+              <span class="meta-icon pin" aria-hidden="true">📍</span>
+              <span>White Castle Auditorium, Kannachery</span>
+            </p>
+          </div>
+
+          <!-- Ornamental Rosette Divider -->
+          <div class="ornament-divider">
+            <span class="line"></span>
+            <span class="symbol">❁</span>
+            <span class="line"></span>
+          </div>
+
+          <!-- Family Blessing -->
+          <p class="blessing-italic">
+            Your presence and heartfelt prayers will be a great<br />
+            honor and blessing to us!
+          </p>
+
+          <div class="sharing-block">
+            <p class="sharing-title">Sharing the Happiness</p>
+            <p class="sharing-names">Farshad, Hina, Aizal &amp; Family</p>
+          </div>
+        </section>
+
+        <!-- 2. COUNTDOWN & VENUE DIRECTIONS CARD -->
+        <section class="white-section-card">
+          <h3 class="card-heading">COUNTDOWN &amp; VENUE</h3>
+
+          <div class="countdown-grid" id="countdown">
+            <div class="time-box">
+              <span id="days">00</span>
+              <small>DAYS</small>
+            </div>
+            <div class="time-box">
+              <span id="hours">00</span>
+              <small>HOURS</small>
+            </div>
+            <div class="time-box">
+              <span id="minutes">00</span>
+              <small>MINS</small>
+            </div>
+            <div class="time-box">
+              <span id="seconds">00</span>
+              <small>SECS</small>
+            </div>
+          </div>
+
+          <div class="venue-actions">
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=White+Castle+Auditorium+Kannachery+Kozhikode"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="pill-btn solid-burgundy-btn"
+            >
+              OPEN VENUE IN GOOGLE MAPS
+            </a>
+            <button type="button" id="save-calendar-btn" class="pill-btn outline-pill-btn">
+              ADD TO CALENDAR
+            </button>
+          </div>
+        </section>
+
+        <!-- 3. OFFICIAL WEDDING CARD + DOWNLOAD -->
+        <section class="white-section-card">
+          <h3 class="card-heading">OFFICIAL WEDDING CARD</h3>
+
+          <div class="wedding-card-preview">
+            <img
+              src="poster.jpg"
+              alt="Fahad & Diya Official Wedding Card"
+              class="wedding-card-img"
+            />
+          </div>
+
+          <a
+            href="poster.jpg"
+            download="Fahad-Diya-Wedding-Card.jpg"
+            class="pill-btn outline-pill-btn download-card-btn"
+          >
+            ↓ DOWNLOAD INVITATION CARD
+          </a>
+        </section>
+
+        <!-- 4. DUAS & HEARTFELT WISHES -->
+        <section class="white-section-card">
+          <h3 class="card-heading">DUAS &amp; HEARTFELT WISHES</h3>
+
+          <form id="wishes-form" class="wishes-form">
+            <input
+              type="text"
+              id="guest-name"
+              class="form-input"
+              placeholder="Your Name &amp; Family"
+              required
+            />
+
+            <div class="dua-chips">
+              <button
+                type="button"
+                class="dua-chip"
+                data-dua="Barakallahu lakuma wa baraka alaykuma wa jama'a baynakuma fi khayr! May Allah bless your marriage with endless love and mercy. Ameen!"
+              >
+                Barakallahu lakuma...
+              </button>
+              <button
+                type="button"
+                class="dua-chip"
+                data-dua="Alf Mabrook! Wishing Fahad & Diya a lifetime filled with love, peace, happiness, and endless barakah. Ameen!"
+              >
+                Mabrook &amp; Blessings
+              </button>
+            </div>
+
+            <textarea
+              id="guest-message"
+              class="form-textarea"
+              rows="4"
+              placeholder="Write your prayers and blessings for Fahad &amp; Diya..."
+              required
+            ></textarea>
+
+            <button type="submit" class="pill-btn solid-burgundy-btn submit-wish-btn">
+              SEND PRAYERS &amp; WISHES
+            </button>
+          </form>
+
+          <div id="wishes-list" class="wishes-list">
+            <!-- Rendered dynamically via script.js with initial wishes -->
+          </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="scroll-footer">
+          FAHAD &amp; DIYA &bull; 12 . 12 . 2026
+        </footer>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+</body>
+</html>
