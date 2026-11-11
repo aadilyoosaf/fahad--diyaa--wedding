@@ -308,7 +308,7 @@ body.locked {
 
 /* Couple Names & Parentage */
 .couple-block {
-  margin: 1.35rem 0 1.6rem;
+  margin: 0.85rem 0 1.55rem;
 }
 
 .couple-name {
@@ -343,7 +343,7 @@ body.locked {
   font-weight: 600;
   letter-spacing: 0.24em;
   color: var(--text-main);
-  margin-bottom: 0.95rem;
+  margin: 1.15rem 0 0.55rem;
 }
 
 .date-row {
