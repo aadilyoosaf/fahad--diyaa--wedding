@@ -9,7 +9,7 @@
   --burgundy-btn-top: #6e1220;
   --burgundy-btn-bot: #430710;
   --chip-bg: #f8eff0;
-  --chip-border: #dfbFC4;
+  --chip-border: #dfbfc4;
   --text-main: #3b1c17;
   --text-muted: #6e5549;
 }
@@ -33,7 +33,6 @@ body.locked {
   overflow: hidden;
 }
 
-/* Hidden YouTube Audio Container */
 #yt-audio-container {
   position: fixed;
   width: 1px;
@@ -45,17 +44,6 @@ body.locked {
   z-index: -1;
 }
 
-/* Falling Rose Petals Overlay */
-#petal-canvas {
-  position: fixed;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 50;
-}
-
-/* Wax Seal Splash Envelope */
 .envelope-overlay {
   position: fixed;
   inset: 0;
@@ -121,9 +109,9 @@ body.locked {
 }
 
 .envelope-names {
-  font-family: 'Lobster Two', cursive;
-  font-style: italic;
-  font-size: 2.75rem;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.1rem;
+  font-weight: 400;
   color: var(--burgundy-dark);
   margin: 0.75rem 0 0.25rem;
 }
@@ -202,7 +190,6 @@ body.locked {
   color: var(--burgundy);
 }
 
-/* Main Page Wrapper & Double-Bordered Cream Scroll */
 .page-wrapper {
   width: 100%;
   display: flex;
@@ -214,8 +201,6 @@ body.locked {
   width: 100%;
   max-width: 490px;
   background-color: var(--scroll-bg);
-  background-image: radial-gradient(rgba(196, 172, 140, 0.28) 1px, transparent 1px);
-  background-size: 16px 16px;
   padding: 12px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
 }
@@ -227,7 +212,6 @@ body.locked {
   padding: 2.5rem 1.25rem 2.2rem;
 }
 
-/* 1. SEPARATE INVITATION AREA */
 .hero-invitation {
   text-align: center;
   padding: 0.4rem 0.5rem 2.2rem;
@@ -257,34 +241,6 @@ body.locked {
   color: #4a1c17;
 }
 
-.quran-verse-block {
-  margin-top: 0.7rem;
-  margin-bottom: 1.15rem;
-}
-
-.arabic-verse {
-  font-family: 'Amiri', serif;
-  font-size: 1.55rem;
-  color: var(--burgundy-dark);
-  margin-bottom: 0.25rem;
-}
-
-.verse-translation {
-  font-family: 'Cinzel', serif;
-  font-size: 0.66rem;
-  letter-spacing: 0.2em;
-  color: var(--text-muted);
-  margin-bottom: 0.2rem;
-}
-
-.verse-ref {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.58rem;
-  letter-spacing: 0.18em;
-  color: #8b7265;
-}
-
-/* Ornamental Dividers */
 .ornament-divider {
   display: flex;
   align-items: center;
@@ -306,19 +262,26 @@ body.locked {
   line-height: 1;
 }
 
-/* Couple Names & Parentage */
+.ceremony-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  color: var(--text-main);
+  margin: 1.15rem 0 0.55rem;
+}
+
 .couple-block {
   margin: 0.85rem 0 1.55rem;
 }
 
 .couple-name {
-  font-family: 'Lobster Two', cursive;
-  font-style: italic;
-  font-weight: 700;
-  font-size: 3.35rem;
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
+  font-size: 3.8rem;
   line-height: 1.15;
   color: var(--burgundy-dark);
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.25rem;
 }
 
 .parentage {
@@ -333,17 +296,7 @@ body.locked {
   font-size: 2.1rem;
   font-weight: 600;
   color: var(--burgundy);
-  margin: 0.75rem 0 0.45rem;
-}
-
-/* Ceremony Date Row */
-.ceremony-label {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.66rem;
-  font-weight: 600;
-  letter-spacing: 0.24em;
-  color: var(--text-main);
-  margin: 1.15rem 0 0.55rem;
+  margin: 0.65rem 0 0.35rem;
 }
 
 .date-row {
@@ -378,7 +331,6 @@ body.locked {
   background-color: #b49a87;
 }
 
-/* Time & Venue Lines */
 .event-meta {
   display: flex;
   flex-direction: column;
@@ -400,7 +352,6 @@ body.locked {
   font-size: 0.98rem;
 }
 
-/* Family Blessing */
 .blessing-italic {
   font-size: 1.05rem;
   font-style: italic;
@@ -421,7 +372,6 @@ body.locked {
   color: var(--burgundy-dark);
 }
 
-/* WHITE ROUNDED SECTION CARDS (Countdown, Official Card, Duas) */
 .white-section-card {
   background-color: var(--white-card);
   border: 1px solid #e7dac8;
@@ -442,7 +392,6 @@ body.locked {
   text-transform: uppercase;
 }
 
-/* Countdown Grid */
 .countdown-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -480,7 +429,6 @@ body.locked {
   gap: 0.65rem;
 }
 
-/* Pill Buttons */
 .pill-btn {
   display: flex;
   align-items: center;
@@ -520,7 +468,6 @@ body.locked {
   background-color: var(--scroll-bg);
 }
 
-/* Official Wedding Card Preview */
 .wedding-card-preview {
   border-radius: 12px;
   overflow: hidden;
@@ -534,7 +481,6 @@ body.locked {
   height: auto;
 }
 
-/* Duas & Heartfelt Wishes Form */
 .wishes-form {
   display: flex;
   flex-direction: column;
@@ -595,7 +541,6 @@ body.locked {
   transform: translateY(-1px);
 }
 
-/* Wishes Feed List */
 .wishes-list {
   display: flex;
   flex-direction: column;
@@ -623,7 +568,6 @@ body.locked {
   color: var(--text-main);
 }
 
-/* Scroll Footer */
 .scroll-footer {
   text-align: center;
   padding-top: 0.65rem;
@@ -633,7 +577,6 @@ body.locked {
   color: #8c7768;
 }
 
-/* Floating Music Button */
 .music-toggle {
   position: fixed;
   bottom: 1.15rem;

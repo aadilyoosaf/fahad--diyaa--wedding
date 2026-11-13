@@ -9,7 +9,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Lobster+Two:ital,wght@1,700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -18,9 +18,6 @@
   <div id="yt-audio-container" aria-hidden="true">
     <div id="yt-player"></div>
   </div>
-
-  <!-- Falling Rose Petals Canvas -->
-  <canvas id="petal-canvas" aria-hidden="true"></canvas>
 
   <!-- Wax Seal Envelope Splash Screen -->
   <div id="envelope-overlay" class="envelope-overlay">
@@ -56,7 +53,7 @@
     <main class="invitation-scroll">
       <div class="scroll-inner-border">
 
-        <!-- 1. SEPARATE INVITATION AREA -->
+        <!-- 1. SEPARATE DIGITAL INVITATION AREA -->
         <section class="hero-invitation">
           <!-- Calligraphic Bismillah Lockup & English Translation -->
           <div class="bismillah-header">
@@ -65,13 +62,6 @@
               IN THE NAME OF ALLAH<br />
               <span>THE MOST MERCIFUL</span>
             </p>
-          </div>
-
-          <!-- Quranic Pairing Verse -->
-          <div class="quran-verse-block">
-            <p class="arabic-verse" dir="rtl" lang="ar">فِي الدُّنْيَا وَالْآخِرَةِ</p>
-            <p class="verse-translation">AND WE CREATED YOU IN PAIRS</p>
-            <p class="verse-ref">QURAN 78:8</p>
           </div>
 
           <!-- Ornamental Leaf Divider -->
@@ -98,6 +88,7 @@
             </p>
           </div>
 
+          <!-- Ceremony Date & Time -->
           <div class="date-row">
             <div class="date-col">Saturday</div>
             <div class="date-sep"></div>
@@ -245,9 +236,7 @@
             </button>
           </form>
 
-          <div id="wishes-list" class="wishes-list">
-            <!-- Rendered dynamically via script.js with initial wishes -->
-          </div>
+          <div id="wishes-list" class="wishes-list"></div>
         </section>
 
         <!-- FOOTER -->

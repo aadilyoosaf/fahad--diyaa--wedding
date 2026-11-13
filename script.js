@@ -1,4 +1,3 @@
-// 1. YouTube Background Nasheed: Maher Zain - Bika Moulhimi (Muffled) | BbzBAX_pHho
 let ytPlayer = null;
 let isPlayerReady = false;
 let shouldPlayOnReady = false;
@@ -67,7 +66,6 @@ function updateMusicUI() {
   }
 }
 
-// 2. Wax Seal Envelope Reveal
 const openSealBtn = document.getElementById('open-seal-btn');
 const envelopeCard = document.getElementById('envelope-card');
 const envelopeOverlay = document.getElementById('envelope-overlay');
@@ -96,7 +94,6 @@ musicToggle.addEventListener('click', () => {
   updateMusicUI();
 });
 
-// 3. Live Countdown to Saturday, 12 December 2026, 7:00 PM IST
 const weddingTarget = new Date('2026-12-12T19:00:00+05:30').getTime();
 
 function updateCountdown() {
@@ -116,7 +113,6 @@ function updateCountdown() {
 updateCountdown();
 setInterval(updateCountdown, 1000);
 
-// 4. Add to Calendar (.ics download)
 document.getElementById('save-calendar-btn').addEventListener('click', () => {
   const icsContent = [
     'BEGIN:VCALENDAR',
@@ -139,7 +135,6 @@ document.getElementById('save-calendar-btn').addEventListener('click', () => {
   link.click();
 });
 
-// 5. Duas & Heartfelt Wishes (Quick-Fill Chips + Persistent Wishes Feed)
 const DEFAULT_WISHES = [
   {
     name: 'Farshad, Hina & Aizal',
@@ -147,7 +142,6 @@ const DEFAULT_WISHES = [
   }
 ];
 
-// Clean up old v1 cached default wish if present
 try {
   localStorage.removeItem('fahad_diya_wedding_wishes_v1');
 } catch (e) {}
@@ -164,18 +158,14 @@ function loadWishes() {
     if (Array.isArray(saved) && saved.length > 0) {
       return saved;
     }
-  } catch (e) {
-    // fallback to defaults
-  }
+  } catch (e) {}
   return [...DEFAULT_WISHES];
 }
 
 function saveWishes(wishes) {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(wishes));
-  } catch (e) {
-    // ignore storage quota errors
-  }
+  } catch (e) {}
 }
 
 function escapeHtml(str) {
@@ -221,55 +211,3 @@ wishesForm.addEventListener('submit', (e) => {
 });
 
 renderWishes();
-
-// 6. Softly Drifting Rose Petals Animation
-const canvas = document.getElementById('petal-canvas');
-const ctx = canvas.getContext('2d');
-let petals = [];
-
-function resizeCanvas() {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-}
-window.addEventListener('resize', resizeCanvas);
-resizeCanvas();
-
-for (let i = 0; i < 18; i++) {
-  petals.push({
-    x: Math.random() * canvas.width,
-    y: Math.random() * canvas.height,
-    rx: Math.random() * 5 + 3.5,
-    ry: Math.random() * 3 + 2,
-    vy: Math.random() * 0.65 + 0.35,
-    vx: (Math.random() - 0.5) * 0.45,
-    angle: Math.random() * Math.PI * 2,
-    spin: (Math.random() - 0.5) * 0.02,
-    alpha: Math.random() * 0.25 + 0.14
-  });
-}
-
-function animatePetals() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  petals.forEach((p) => {
-    p.y += p.vy;
-    p.x += p.vx;
-    p.angle += p.spin;
-    if (p.y > canvas.height + 12) {
-      p.y = -12;
-      p.x = Math.random() * canvas.width;
-    }
-    if (p.x > canvas.width + 12) p.x = -12;
-    if (p.x < -12) p.x = canvas.width + 12;
-
-    ctx.save();
-    ctx.translate(p.x, p.y);
-    ctx.rotate(p.angle);
-    ctx.beginPath();
-    ctx.ellipse(0, 0, p.rx, p.ry, 0, 0, Math.PI * 2);
-    ctx.fillStyle = `rgba(138, 38, 56, ${p.alpha})`;
-    ctx.fill();
-    ctx.restore();
-  });
-  requestAnimationFrame(animatePetals);
-}
-animatePetals();
